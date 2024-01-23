@@ -17,6 +17,9 @@ connectDB();
 //rest object
 const app = express();
 
+//esModule filename
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 //middlewares
 app.use(cors());
 app.use(express.json());
